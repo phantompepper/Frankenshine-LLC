@@ -1,1 +1,3 @@
 /*    /index.html   200
+# Redirect default Netlify subdomain to primary domain
+http://suspicious-banach-dac667.netlify.com/* http://frankenshineautomotivedetailing.com/:splat 301!
