@@ -1,0 +1,126 @@
+body {
+  font-family: "Raleway", sans-serif;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  font-weight: 400;
+  color: $color-grey-dark;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  /* removes jitter from animations on child elements */
+  backface-visibility: hidden;
+  margin-bottom: 0;
+  padding: 1rem;
+  text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.6);
+
+  &--dark {
+    color: $color-black;
+    text-transform: uppercase;
+    /* removes jitter from animations on child elements */
+    backface-visibility: hidden;
+    margin-bottom: 0;
+    padding: 1rem;
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.6);
+  }
+
+  &--main {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 2.5rem;
+    margin-right: -3.5rem;
+    animation: moveInLeft 1s ease-in;
+    /* prevents the element from showing on load before animation starts -- Loads what is stated at 0% in the @keyframes refrence*/
+    animation-fill-mode: backwards;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+    }
+  }
+
+  &--sub {
+    display: block;
+    font-weight: 900;
+    letter-spacing: 1.75rem;
+    margin-right: -1.75rem;
+    background-color: rgba($color-grey-dark, .9);
+    animation: logoFadeIn .5s ease-in;
+    animation-fill-mode: backwards;
+    padding: 4rem;
+    // margin-top: 70vh;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
+  }
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 700;
+  background-image: linear-gradient(to right,
+    $color-grey-light-1,
+    $color-grey-dark-3);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+  letter-spacing: 2px;
+
+    &--light {
+      font-size: 3rem;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  color: $color-white;
+  transition: all 0.2s;
+  letter-spacing: 2px;
+    }
+
+  // @include respond(tab-port) {
+  //   font-size: 3rem;
+  // }
+  // @include respond(phone) {
+  //   font-size: 2.5rem;
+  // }
+  &:hover {
+    transform: skewX(20deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: 4rem;
+  color: $color-grey-dark;
+  font-weight: 700;
+
+  // text-transform: uppercase;
+  &--gold {
+  color: $color-gold;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+  }
+
+  &--super {
+  color: $color-super;
+  font-size: 3rem;
+  font-weight: 700;
+  }
+}
+
+.paragraph {
+  font-size: 1.8rem;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

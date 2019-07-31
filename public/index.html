@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="<%= BASE_URL %>apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="mask-icon" href="<%= BASE_URL %>safari-pinned-tab.svg" color="#5bbad5">
+  <title>Frankenshine</title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but Frankenshine's website doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app">
+    <!-- DUMMY FORM FOR NETLIFY -->
+    <form name="estimate-form" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="Full Name" />
+      <input type="text" name="Email" />
+      <input type="text" name="Vehicle Make" />
+      <input type="text" name="Vehicle Model" />
+      <input type="number" name="Rows of Seating" />
+      <select name="Vehicle-Condition"></select>
+      <textarea type="text" name="Message"></textarea>
+    </form>
+  </div>
+
+  <!-- built files will be auto injected -->
+  <script>
+    const navigation = document.querySelector(".navigation");
+    const navCheckbox = document.querySelector(".navigation__checkbox");
+    const navItems = document.querySelectorAll(".navigation__link");
+
+    navItems.forEach(item => item.addEventListener("click", _ => navCheckbox.checked = false));
+  </script>
+</body>
+
+</html>

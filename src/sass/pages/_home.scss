@@ -1,0 +1,107 @@
+.section-about {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23650d88' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  // background-size: cover;
+  padding: 15rem 2rem;
+
+  @include respond(tab-port) {
+    padding: 2rem 0;
+  }
+
+  &__paragraph {
+    color: $color-white;
+
+  }
+}
+
+
+.section-tours {
+  background-color: $color-grey-light-1;
+  padding: 15rem 0;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}
+
+.section-stories {
+  padding: 15rem 0;
+  position: relative;
+  background-color: rgba($color-blue, .2);
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom,
+    $color-primary-light,
+    $color-primary-dark);
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}
+
+.section-footer {
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+  padding: 4rem;
+  font-size: 1.6rem;
+  color: $color-white;
+  background-color: $color-grey-dark-2;
+  align-items: center;
+}
+.book {
+  background-image: linear-gradient(105deg,
+    rgba($color-white, 0.9) 0%,
+    rgba($color-white, 0.9) 49%,
+    transparent 50%),
+    url();
+  background-size: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.5);
+
+  @include respond(tab-land) {
+    background-image: linear-gradient(to right,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 100%),
+      url();
+    background-size: cover;
+    background-position: right;
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(to right,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 100%),
+      url();
+    background-position: right;
+  }
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+
+    @include respond(tab-land) {
+      width: 65%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+}
+
+// Sweet SKEW trick: & > * will select the DIRECT child of the partent. In this example, it is .row ///
+//   transform: skewY(-7deg);
+
+//realigns the direct child .row so that it appears straight again
+
+//   & > * {
+//     transform: skewY(7deg);
+//   }
+//====================================================================================================//
