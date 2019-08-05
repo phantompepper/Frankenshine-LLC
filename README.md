@@ -1,4 +1,4 @@
-# frankenshine-site
+# frankenshine LLC
 
 - Frankenshine Auto Detailing Service in Canon City, CO
   [Live Site - www.frankenshineautomotivedetailing.com](https://frankenshineautomotivedetailing.com/)
