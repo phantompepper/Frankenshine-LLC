@@ -1,4 +1,5 @@
-# frankenshine LLC
+![Logo](https://github.com/phantompepper/Frankenshine-LLC/blob/master/favicon_package_v0.16/android-chrome-192x192.png)
+# Frankenshine LLC
 
 - Frankenshine Auto Detailing Service in Canon City, CO
   [Live Site - www.frankenshineautomotivedetailing.com](https://frankenshineautomotivedetailing.com/)
